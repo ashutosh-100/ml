@@ -1,0 +1,195 @@
+# # def factorial(n):
+# #  if n == 0: # base case
+# #   return 1
+# #  return n * factorial(n - 1)
+
+# # print(factorial(5))
+# # import re
+
+# # text = "my name is ashutosh and I am 21 years old."
+# # match = re.findall(r"\d+", text) 
+
+# # if match: 
+# #  print(match)
+# # Install first:
+# # pip install pyttsx3
+
+# import pyttsx3
+
+# # Initialize the text-to-speech engine
+# engine = pyttsx3.init()
+
+# # Set properties
+# engine.setProperty('rate', 100)    # Speed of speech
+# engine.setProperty('volume', 1.0)  # Volume (0.0 to 1.0)
+
+# # Optional: Change voice (0 = male, 1 = female, if available)
+# voices = engine.getProperty('voices')
+# engine.setProperty('voice', voices[0].id)
+
+# # # Text to speak
+
+# text = "Enter the text you want to convert to speech"
+
+# # Speak the text
+# engine.say(text)
+
+# # Wait until speech is finished
+# engine.runAndWait()
+# x=input("Enter the text you want to convert to speech: ")
+# # Speak user input
+# engine.say(x)
+# engine.runAndWait()
+# engine = pyttsx3.init()
+
+# # Set properties
+# engine.setProperty('rate', 100)    # Speed of speech
+# engine.setProperty('volume', 1.0)  # Volume (0.0 to 1.0)
+
+# # Optional: Change voice (0 = male, 1 = female, if available)
+# voices = engine.getProperty('voices')
+# engine.setProperty('voice', voices[0].id)
+
+# # # Text to speak
+# x=input("Enter the text you want to convert to speech: ")
+# # text = "Enter the text you want to convert to speech"
+
+# # Speak the text
+# engine.say(x)
+# import pyttsx3
+
+# # Initialize the engine only once
+# engine = pyttsx3.init()
+
+# # Set properties
+# engine.setProperty('rate', 100)
+# engine.setProperty('volume', 1.0)
+
+# # Select voice
+# voices = engine.getProperty('voices')
+# engine.setProperty('voice', voices[0].id)
+
+# # First message
+# text = "Enter the text you want to convert to speech"
+# engine.say(text)
+# engine.runAndWait()
+
+# # Take user input
+# x = input("Enter the text you want to convert to speech: ")
+
+# # Speak user input
+# engine.say(x)
+# engine.runAndWait()
+# import pyttsx3
+
+# # Initialize the text-to-speech engine
+# engine = pyttsx3.init()
+
+# # Set speech properties
+# engine.setProperty('rate', 100)      # Speech speed
+# engine.setProperty('volume', 1.0)    # Volume (0.0 to 1.0)
+
+# # Select a voice
+# voices = engine.getProperty('voices')
+# engine.setProperty('voice', voices[0].id)   # Use voices[1].id for female voice (if available)
+
+# # Speak the prompt
+# engine.say("Enter the text you want to convert to speech.")
+# engine.runAndWait()
+
+# # Take input from the user
+# x = input("Enter the text you want to convert to speech: ")
+
+# # Speak the user input
+# if x.strip():              # Check if input is not empty
+#     engine.say(x)
+#     # engine.runAndWait()
+# else:
+#     print("No text entered.")
+
+# # Stop the engine (optional cleanup)
+# engine.runAndWait()
+# import pyttsx3
+
+# # Initialize engine
+# engine = pyttsx3.init()
+
+# # Properties
+# engine.setProperty('rate', 100)
+# engine.setProperty('volume', 1.0)
+
+# # Voice selection
+# voices = engine.getProperty('voices')
+# engine.setProperty('voice', voices[0].id)
+
+# # Welcome message
+# engine.say("Enter the text you want to convert to speech.")
+# engine.runAndWait()
+
+# # User input
+# x = input("Enter the text you want to convert to speech: ")
+
+# # Convert text to speech
+# if x.strip():
+#     engine.say(x)
+#     engine.runAndWait()
+# else:
+#     print("No text entered.")
+#     engine.runAndWait()
+# import pyttsx3
+
+# # Initial Welcome Message
+# engine = pyttsx3.init()
+# engine.setProperty('rate', 100)
+# engine.setProperty('volume', 1.0)
+# x = input("Enter the text (type 'exit' to stop): ")
+# engine.say("Enter the text you want to convert to speech.")
+# engine.runAndWait()
+
+# while True:
+   
+
+#     if x.lower() == "exit":
+#         # Create a fresh instance to say goodbye
+#         engine = pyttsx3.init()
+#         engine.say(x)
+#         engine.runAndWait()
+#         break
+
+#     if x.strip():
+#         # Re-initialize here to prevent the freeze bug
+#         engine = pyttsx3.init()
+#         engine.setProperty('rate', 100)
+#         engine.setProperty('volume', 1.0)
+        
+#         engine.say(x)
+#         engine.runAndWait()
+#     else:
+#         print("No text entered.")
+import pyttsx3
+
+# Initialize the text-to-speech engine
+engine = pyttsx3.init()
+
+# Set properties
+engine.setProperty('rate', 100)    # Speed of speech
+engine.setProperty('volume', 1.0)  # Volume (0.0 to 1.0)
+x=input("Enter the text you want to convert to speech: ")
+# Speak user input
+engine.say(x)
+engine.runAndWait() 
+# Optional: Change voice (0 = male, 1 = female, if available)
+# voices = engine.getProperty('voices')
+# engine.setProperty('voice', voices[1].id)
+
+# # # Text to speak
+
+# text = "Enter the text you want to convert to speech"
+
+# # Speak the text
+# engine.say(X)
+
+# # Wait until speech is finished
+# engine.runAndWait()
+
+import tim
